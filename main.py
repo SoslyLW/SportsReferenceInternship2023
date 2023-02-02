@@ -7,23 +7,12 @@ class Team:
         self.name = name
         self.headToHeadDict = hthDict
 
-    # Prints team for debugging 
-    def teamPrint(self):
-        print(self.name)
-        print(self.headToHeadDict)
-        print()
-
 ## League class (collection of teams)
 class League:
     def __init__(self, teams):
         self.teams = teams
         self.matrix = Matrix(self.getTeamNamesList())
     
-    # Prints all teams in league for debugging
-    def printAll(self):
-        for team in teams:
-            team.teamPrint()
-
     # Returns list of all team names in the League
     def getTeamNamesList(self):
         names = []
